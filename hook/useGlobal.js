@@ -6,11 +6,10 @@ axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
 import { useState, useEffect } from "react";
 import { useQuery } from "react-query";
-import PostModal from "../components/common/PostModal";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
 
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const useGlobal = () => {
   const axios = require("axios").default;
   const [refreshing, setRefreshing] = useState(false);
